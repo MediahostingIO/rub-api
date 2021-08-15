@@ -1,0 +1,8 @@
+/.idea/*
+/.idea
+/node_modules/
+/package-lock.json
+/rubapi.iml
+/lib
+lib/*
+test.ts

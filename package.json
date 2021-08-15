@@ -1,0 +1,48 @@
+{
+  "name": "@mediahosting/rub-api",
+  "version": "1.0.0",
+  "description": "Api-Wrapper for Roeth und Beck Api",
+  "main": "lib/rub-api.js",
+  "types": "lib/rub-api.d.ts",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags",
+    "build": "tsc"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "roeth-und-beck",
+    "roeth und beck",
+    "roeth-und-beck api",
+    "rubapi",
+    "rub_api"
+  ],
+  "author": "Florian Richter - Mediahosting",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2",
+    "ts-node": "^10.1.0",
+    "tslib": "^2.3.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MediahostingIO/rub-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MediahostingIO/rub-api/issues"
+  },
+  "homepage": "https://github.com/MediahostingIO/rub-api#readme",
+  "directories": {
+    "lib": "lib"
+  }
+}
