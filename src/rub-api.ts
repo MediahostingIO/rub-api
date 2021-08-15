@@ -1,6 +1,7 @@
 import Options from "./types/options";
 import RubUtils from "./utils/rubUtils";
 import DomainController from "./controller/domians/DomainController";
+import Licenses from "./controller/licenses";
 
 class RubApi {
     private readonly options: Options
@@ -11,6 +12,7 @@ class RubApi {
     }
 
     public domains = new DomainController()
+    public licenses = new Licenses()
 }
 
 export { RubApi };
