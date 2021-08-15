@@ -1,5 +1,6 @@
 import RubUtils from "../../utils/rubUtils";
 import {
+    DedicatedServerResponse,
     DedicatedServersResponse,
     ServerReinstall,
     ServerTemplatesResponse
@@ -14,23 +15,23 @@ export default class DedicatedServerController {
         return RubUtils.call('/dedicated_server/show', { method: 'GET', params: { serverId } });
     }
 
-    public getStatus(serverId: number): Promise<DedicatedServersResponse> {
+    public getStatus(serverId: number): Promise<DedicatedServerResponse> {
         return RubUtils.call('/dedicated_server/status', { method: 'GET', params: { serverId } });
     }
 
-    public startServer(serverId: number): Promise<DedicatedServersResponse> {
+    public startServer(serverId: number): Promise<DedicatedServerResponse> {
         return RubUtils.call('/dedicated_server/start', { method: 'POST', params: { serverId } });
     }
 
-    public stopServer(serverId: number): Promise<DedicatedServersResponse> {
+    public stopServer(serverId: number): Promise<DedicatedServerResponse> {
         return RubUtils.call('/dedicated_server/stop', { method: 'POST', params: { serverId } });
     }
 
-    public resetServer(serverId: number): Promise<DedicatedServersResponse> {
+    public resetServer(serverId: number): Promise<DedicatedServerResponse> {
         return RubUtils.call('/dedicated_server/reset"', { method: 'POST', params: { serverId } });
     }
 
-    public reinstallServer(data: ServerReinstall): Promise<DedicatedServersResponse> {
+    public reinstallServer(data: ServerReinstall): Promise<DedicatedServerResponse> {
         return RubUtils.call('/dedicated_server/reinstall', { method: 'POST', params: data });
     }
 
