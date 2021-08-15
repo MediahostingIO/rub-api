@@ -5,6 +5,7 @@ import Licenses from "./controller/licenses";
 import General from "./controller/general";
 import TeamspeakController from "./controller/teamspeak/TeamspeakController";
 import Reseller from "./controller/reseller";
+import DedicatedServerController from "./controller/dedicated_server/DedicatedServerController";
 
 class RubApi {
     private readonly options: Options
@@ -19,6 +20,7 @@ class RubApi {
     public general = new General()
     public teamspeak = new TeamspeakController()
     public reseller = new Reseller()
+    public dedicated_server = new DedicatedServerController()
 }
 
 export { RubApi };
