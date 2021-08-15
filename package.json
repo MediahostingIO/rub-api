@@ -1,6 +1,6 @@
 {
   "name": "@mediahosting/rub-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Api-Wrapper for Roeth und Beck Api",
   "main": "lib/rub-api.js",
   "types": "lib/rub-api.d.ts",
