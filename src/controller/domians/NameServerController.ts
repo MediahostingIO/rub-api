@@ -1,5 +1,5 @@
 import RubUtils from "../../utils/rubUtils";
-import {NameserverResponse, NameserversResponse} from "../../types/domains/nameserver";
+import { NameserverResponse, NameserversResponse } from "../../types/domains/nameserver";
 
 export default class NameServerController {
     public getNameservers(): Promise<NameserversResponse> {
