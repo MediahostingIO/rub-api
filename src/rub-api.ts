@@ -3,6 +3,7 @@ import RubUtils from "./utils/rubUtils";
 import DomainController from "./controller/domians/DomainController";
 import Licenses from "./controller/licenses";
 import General from "./controller/general";
+import TeamspeakController from "./controller/teamspeak/TeamspeakController";
 
 class RubApi {
     private readonly options: Options
@@ -15,6 +16,7 @@ class RubApi {
     public domains = new DomainController()
     public licenses = new Licenses()
     public general = new General()
+    public teamspeak = new TeamspeakController()
 }
 
 export { RubApi };
