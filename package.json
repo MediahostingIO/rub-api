@@ -1,7 +1,7 @@
 {
   "name": "@mediahosting/rub-api",
   "version": "1.0.7",
-  "description": "Api-Wrapper for Roeth und Beck Api",
+  "description": "API-Wrapper for Roeth und Beck RestAPI",
   "main": "lib/rub-api.js",
   "types": "lib/rub-api.d.ts",
   "scripts": {
@@ -19,7 +19,14 @@
     "roeth und beck",
     "roeth-und-beck api",
     "rubapi",
-    "rub_api"
+    "rub_api",
+    "nodejs",
+    "typescript",
+    "hosting",
+    "mediahosting",
+    "hoster",
+    "whmcs",
+    "wisecp"
   ],
   "author": "Florian Richter - Mediahosting",
   "license": "Apache-2.0",
