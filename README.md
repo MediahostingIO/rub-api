@@ -30,7 +30,8 @@ Install the package
 ```
 $ npm install @mediahosting/rub-api
 ```
-##Usage
+## Usage
+
 The host variable is not required but the apiKey must be specified
 ```javascript
 import { RubApi } from "@mediahosting/rub-api"
