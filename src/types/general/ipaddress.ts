@@ -20,6 +20,15 @@ export interface Address {
     traffic_total: string;
 }
 
+export interface IpAddress {
+    id: number;
+    address: string;
+    netmask: number;
+    gateway: string;
+    version: number;
+    rdns: string;
+}
+
 export interface Ip4addresses {
     id: number;
     address: string;

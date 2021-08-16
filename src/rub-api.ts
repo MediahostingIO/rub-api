@@ -4,8 +4,9 @@ import DomainController from "./controller/domians/DomainController";
 import Licenses from "./controller/licenses";
 import General from "./controller/general";
 import TeamspeakController from "./controller/teamspeak/TeamspeakController";
-import Reseller from "./controller/reseller";
+import ResellerController from "./controller/reseller/ResellerController";
 import DedicatedServerController from "./controller/dedicated_server/DedicatedServerController";
+import VirtualServerController from "./controller/virtual_server/VirtualServerController";
 
 class RubApi {
     private readonly options: Options
@@ -19,8 +20,11 @@ class RubApi {
     public licenses = new Licenses()
     public general = new General()
     public teamspeak = new TeamspeakController()
-    public reseller = new Reseller()
+    public reseller = new ResellerController()
+    // tslint:disable-next-line:variable-name
     public dedicated_server = new DedicatedServerController()
+    // tslint:disable-next-line:variable-name
+    public virtual_server = new VirtualServerController()
 }
 
 export { RubApi };

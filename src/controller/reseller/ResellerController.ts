@@ -1,5 +1,5 @@
 import NewsController from "./NewsController";
 
-export default class Reseller {
+export default class ResellerController {
     public news = new NewsController()
 }

@@ -1,7 +1,7 @@
 import RubUtils from "../../utils/rubUtils";
 import { PleskLicenseResponse, PleskLicensesResponse, PleskTypes } from "../../types/licenses/plesk/plesk";
 
-export default class Plesk {
+export default class PleskController {
     public getLicenses(): Promise<PleskLicensesResponse> {
         return RubUtils.call('/license/plesk', { method: 'GET' })
     }
