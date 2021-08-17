@@ -18,3 +18,8 @@ export interface Record {
     ttl: number;
     priority: number;
 }
+
+export interface CreateRecord {
+    domainName: string;
+    records: [{name: string, type: string, data: string}]
+}
