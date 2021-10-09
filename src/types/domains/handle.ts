@@ -43,7 +43,7 @@ export interface HandleDTO {
     lastName: string
     street: string
     number: string
-    postCode: string
+    postcode: string
     city: string
     region: string
     country: string
