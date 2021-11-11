@@ -7,6 +7,6 @@ export default class DnsController {
     }
 
     public updateDNSRecords(domainName: string, records: string[]): Promise<DNSResponse> {
-        return RubUtils.call('/domain/dns', { method: 'GET', params: { domainName, records } })
+        return RubUtils.call('/domain/dns/update', { method: 'POST', params: { domainName, records } })
     }
 }
