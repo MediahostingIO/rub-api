@@ -17,16 +17,16 @@ class RubApi {
         RubUtils.initialize(this.options)
     }
 
-    public static readonly domains = new DomainController()
-    public static readonly licenses = new Licenses()
-    public static readonly general = new General()
-    public static readonly teamspeak = new TeamspeakController()
-    public static readonly reseller = new ResellerController()
+    public readonly domains = new DomainController()
+    public readonly licenses = new Licenses()
+    public readonly general = new General()
+    public readonly teamspeak = new TeamspeakController()
+    public readonly reseller = new ResellerController()
     // tslint:disable-next-line:variable-name
-    public static readonly dedicated_server = new DedicatedServerController()
+    public readonly dedicated_server = new DedicatedServerController()
     // tslint:disable-next-line:variable-name
-    public static readonly virtual_server = new VirtualServerController()
-    public static readonly webspace = new WebspaceController()
+    public readonly virtual_server = new VirtualServerController()
+    public readonly webspace = new WebspaceController()
 }
 
 export { RubApi };
