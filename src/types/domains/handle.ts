@@ -53,6 +53,10 @@ export interface HandleDTO {
     fax?: string
 }
 
+export interface HandleUpdateDto extends HandleDTO {
+    handle: string
+}
+
 export interface CountriesResponse {
     countries: Country[]
 }

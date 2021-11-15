@@ -1,5 +1,11 @@
 import RubUtils from "../../utils/rubUtils";
-import {CountriesResponse, HandleDTO, HandleResponse, HandlesResponse} from "../../types/domains/handle";
+import {
+    CountriesResponse,
+    HandleDTO,
+    HandleResponse,
+    HandlesResponse,
+    HandleUpdateDto
+} from "../../types/domains/handle";
 
 export default class HandleController {
     public getHandles(): Promise<HandlesResponse[]> {
@@ -18,7 +24,7 @@ export default class HandleController {
         return RubUtils.call('/domain/handle/create', {method: 'POST', params: data})
     }
 
-    public update(data: HandleDTO): Promise<HandleResponse> {
+    public update(data: HandleUpdateDto): Promise<HandleResponse> {
         return RubUtils.call('/domain/handle/update', {method: 'POST', params: data})
     }
 
