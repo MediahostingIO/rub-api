@@ -7,6 +7,7 @@ import TeamspeakController from "./controller/teamspeak/TeamspeakController";
 import ResellerController from "./controller/reseller/ResellerController";
 import DedicatedServerController from "./controller/dedicated_server/DedicatedServerController";
 import VirtualServerController from "./controller/virtual_server/VirtualServerController";
+import WebspaceController from "./controller/webspace/WebspaceController";
 
 class RubApi {
     private readonly options: Options
@@ -16,15 +17,16 @@ class RubApi {
         RubUtils.initialize(this.options)
     }
 
-    public domains = new DomainController()
-    public licenses = new Licenses()
-    public general = new General()
-    public teamspeak = new TeamspeakController()
-    public reseller = new ResellerController()
+    public static readonly domains = new DomainController()
+    public static readonly licenses = new Licenses()
+    public static readonly general = new General()
+    public static readonly teamspeak = new TeamspeakController()
+    public static readonly reseller = new ResellerController()
     // tslint:disable-next-line:variable-name
-    public dedicated_server = new DedicatedServerController()
+    public static readonly dedicated_server = new DedicatedServerController()
     // tslint:disable-next-line:variable-name
-    public virtual_server = new VirtualServerController()
+    public static readonly virtual_server = new VirtualServerController()
+    public static readonly webspace = new WebspaceController()
 }
 
 export { RubApi };
